@@ -4,8 +4,137 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bus-Ticket</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style/style.css">
 </head>
-<body>
-    
+<body class="font-poppins">
+    <header>
+        <div class="navbar bg-base-100 p-6  ">
+            <div class="navbar-start ml-48 pl-16">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Item 1</a></li>
+                  <li>
+                    <a>Parent</a>
+                    <ul class="p-2">
+                     <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                </ul>
+              </div>
+              <a class="font-bold text-5xl">P-Ticket </a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu ml-7 text-1xl menu-horizontal ">
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Destination</a></li>
+                <li><a>search</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end pr-16 mr-52 ">
+                <button class="btn  bg-[#d9f99d]  text-[#1DD100] ">Bus<img src="images/bus-icon.png" alt=""></button>
+           
+              </div>
+          </div>
+    </header>
+    <main>
+      <div class="hero rounded-3xl ml-72 max-w-3xl  h-96 border " style="background-image: url(images/banner.png);">
+        <div class="hero  bg-opacity-60"></div>
+        <div class="hero-content text-center text-neutral-content">
+          <div class="max-w-md">
+            <h1 class="mb-5 text-5xl font-bold">End-to-End Travel With <span class="text-[#1dd100]">P Paribhan</span></h1>
+            <p class="mb-5">Looking for great deals on bus tickets? We'll make it Shohoz for you! Get the lowest prices, and renowned bus operators - all in one place.</p>
+            <button class="btn  bg-[#1DD100] text-black">Buy Tickets</button>
+          </div>
+        </div>
+      </div>
+      <section>
+        <h1 class="text-3xl mt-12 font-bold text-center">Best offers for you</h1>
+      </section>
+      <section class=" flex md:flex-row gap-2   ">
+        <div class="flex mt-6 ml-64">
+          <div class=" card  w-60 h-36 bg-yellow-400  text-primary-content">
+            <div class="card-body">
+              <h1 class="card-title text-black text-4xl font-bold">15% off</h1>
+              <h3 class="text-black font-semibold text-1xl">On your next purchase</h3>
+              <p class="text-black">Use by January 2024</p>
+              
+            </div>
+          </div>
+        
+        <div class="card w-44 h-36 bg-yellow-400 text-primary-content">
+          <div class="card-body">
+            <h2 class="card-title text-center font-bold text-4xl text-black">NEW <SUB>15</SUB></h2>
+            <p class="text-black">Coupon Code</p>           
+          </div>
+        </div>
+        </div>
+        <div class=" mr-60 mt-6 flex  ">
+          <div class="card w-60 h-36 bg-pink-400  text-primary-content">
+            <div class="card-body">
+              <h1 class="card-title text-black text-4xl font-bold">20% off</h1>
+              <h3 class="text-black font-semibold text-1xl">On your next purchase</h3>
+              <p class="text-black">Use by January 2024</p>
+              
+            </div>
+          </div>
+        
+        <div class="card w-44 h-36 bg-pink-400 text-primary-content">
+          <div class="card-body">
+            <h2 class="card-title text-center font-bold text-4xl text-black">NEW<SUB>20</SUB></h2>
+            <p class="text-black">Coupon Code</p>           
+          </div>
+          </div>
+          </div>
+      </section>
+<div class=" mt-9 m-6 justify-center text-center ">
+  <button class="btn font-bold bg-white text-[#1DD100]  border border-[#1DD100] ">See All Offers</button>
+</div>
+<div class=" rounded-3xl border border-[#1DD100] text-center">
+  <h1 class="text-3xl m-3 font-bold">P.H Paribahan</h1>
+  <p>Looking for great deals on bus tickets? We'll make it easy for you! Get the lowest prices,<br> and renowned bus operators - all in one place.
+  </p>
+</div>
+<section class="flex ">
+  <div>
+    <div class="card flex max-h-96 bg-base-100 shadow-xl">
+      <div class="card-body    ">
+        <h2 class="card-title text-3xl font-bold"> <img src="images/bus-logo.png" alt="">Greenline Paribahan  <button class="btn justify-end ml-20 bg-[#d9f99d]  text-[#1DD100] "><img src="images/seat-green-filled.png" alt="">40 Seats left</button></h2>
+        <p class="ml-20">Coach-009-web ! AC_Business</p>
+        <div class="  ">
+          <input type="text" placeholder="Route" class="input input-bordered  w-full max-w-xs " />
+            </div>
+          <div class="">
+          <input type="text" placeholder="Departure Time" class="input input-bordered w-full max-w-xs" />
+        </div>
+          <div class="">
+          <button class="btn">Boarding point - Laxmipor</button>
+          <button class="btn ">Dropping point - Bogura</button>
+          <button class="btn">Est. Time-12 hour</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <div>
+    <div class=" mr-60 mt-6   ">
+      <div class="card w-60 h-36   text-primary-content">
+        <div class="card-body">
+          <img class="w-7 ml-9" src="images/fare.png" alt="">
+          <h1 class="card-title text-center text-black text-4xl font-bold">550 Taka</h1>
+          
+          <p class="text-black ml-5 text-2xl ">Per Seat</p>
+          
+        </div>
+      </div>
+
+  </div>
+</section>
+    </main>
 </body>
 </html>
