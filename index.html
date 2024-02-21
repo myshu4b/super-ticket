@@ -138,16 +138,18 @@
   </div>
 </section>
 <section>
-<div>
-<div> 
+<div class="flex">
+  <div>
+<div class="ml-10 text-center mt-4"> 
 <h1 class="text-3xl  ml-3 font-bold">Select Your Seat</h1>
 <div>
   <button class="btn ml-3  bg-white"> <img src="images/seat-gray.png" alt="">Available</button>
   <button class="btn  bg-white ml-32 text-[#1DD100]  "> <img src="images/seat-green-filled.png" alt="">Selected</button>
 </div>
+<div class="flex">
 <div>
-  <div class="overflow-auto mt-7 w-full max-w-sm shadow-2xl bg-base-100">
-    <table class="table w-96">
+  <div class="overflow-auto  ml-4 mt-7 w-full max-w-lg shadow-2xl bg-base-100">
+    <table class="table ">
       
       <thead>
         <tr>
@@ -184,7 +186,7 @@
           <th class="ml-7">D</th>
           <th class="badge badge-ghost">D1</th>
           <th class="badge badge-ghost ml-7">D2</th>
-          <th class="badge badge-ghost ml-7">D3</th>
+          <th class="badge badge-ghost bg-[#1dd100] ml-7">D3</th>
           <th class="badge badge-ghost ml-7">D4</th>
           
         </tr>
@@ -192,7 +194,7 @@
       <thead>
         <tr>
           <th class="ml-7">E</th>
-          <th class="badge badge-ghost">E1</th>
+          <th class="badge badge-ghost bg-[#1dd100]">E1</th>
           <th class="badge badge-ghost ml-7">E2</th>
           <th class="badge badge-ghost ml-7">E3</th>
           <th class="badge badge-ghost ml-7">E4</th>
@@ -213,7 +215,7 @@
         <tr>
           <th class="ml-7">G</th>
           <th class="badge badge-ghost">G1</th>
-          <th class="badge badge-ghost ml-7">G2</th>
+          <th class="badge badge-ghost bg-[#1dd100] ml-7">G2</th>
           <th class="badge badge-ghost ml-7">G3</th>
           <th class="badge badge-ghost ml-7">G4</th>
           
@@ -252,12 +254,12 @@
   </table>
 </div>
 </div>
-<div>
-  <div class="overflow-x-auto mt-7 w-full max-w-sm shadow-2xl bg-base-100 ">
-    <table class="table w-96">
+<div class="overflow-auto  ml-4 mt-7 w-full max-w-lg shadow-2xl bg-base-100">
+   
+  <table class="table ml-4 w-96">
       <thead>
         <tr>
-          <th class="font-bold text-black text-1xl">seat <sub class="text-[#1DD100]">2</sub></th>
+          <th class="font-bold text-black text-1xl">seat <sub class="text-white badge bg-[#1dd100]">2</sub></th>
           <th class="font-bold text-black text-1xl">class</th>
           <th class="font-bold text-black text-1xl">price</th>
         </tr>
@@ -276,15 +278,15 @@
         </tr>
       </tbody>
     </table>
-        <label class="form-control w-full max-w-xs">
+        <label class="form-control ml-5 w-full max-w-xs">
           <div class="label">
             <span class="label-text-alt text-black text-1xl font-bold ">Total Price</span>
             <span class="label-text-alt text-black text-1xl font-bold ">BDT 1110</span>
           </div>
-          <input type="text"  placeholder="Have any cupon ?" class="input input-bordered w-full max-w-xs"  />
-          <div>
-          <button class=" btn bg-[#1DD100] text-white">Apply</button>
-          </div>
+          <label class="input input-bordered flex items-center gap-2">
+            <input type="text" class="grow" placeholder="Have any cupon ?" />
+            <span class="btn btn-sm text-white bg-[#1dd100] ">Apply</span>
+          </label>
           <div class="label">
             <span class="label-text-alt  text-black text-1xl font-bold ">Grand Total</span>
             
@@ -311,10 +313,17 @@
           <div class="form-control mt-6">
             <button class="btn bg-[#1dd100] text-white text-1xl">Next</button>
           </div>
-        </form>
+          
+            <div class="gap-4">
+              <a class="link link-neutral ">Terms and condition</a>
+                <a class="link link-neutral">Cancellation policy</a>
+           <div>
+          
+      </form>  
       </div>
     </div>
   </div>
+</div>
 </div>
 
 </section>
