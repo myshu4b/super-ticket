@@ -140,23 +140,23 @@
 <section>
 <div class="flex">
   <div>
-<div class="ml-10 text-center mt-4"> 
-<h1 class="text-3xl  ml-3 font-bold">Select Your Seat</h1>
+<div class="ml-10 mt-4">  
+  <div class="overflow-auto  ml-4 mt-7 w-full max-w-lg shadow-2xl bg-white">
+<h1 class="text-3xl p-3 ml-3 font-bold">Select Your Seat</h1>
 <div>
   <button class="btn ml-3  bg-white"> <img src="images/seat-gray.png" alt="">Available</button>
-  <button class="btn  bg-white ml-32 text-[#1DD100]  "> <img src="images/seat-green-filled.png" alt="">Selected</button>
+  <button class="btn  bg-white ml-28 text-[#1DD100]  "> <img src="images/seat-green-filled.png" alt="">Selected</button>
 </div>
-<div class="flex">
-<div>
-  <div class="overflow-auto  ml-4 mt-7 w-full max-w-lg shadow-2xl bg-base-100">
-    <table class="table ">
+<div  >
+
+  <table class="table mt-7 w-full ">
       
       <thead>
         <tr>
-          <th class="ml-7">A</th>
-          <th class="badge badge-ghost">A1</th>
-          <th class="badge badge-ghost ml-7">A2</th>
-          <th class="badge badge-ghost ml-7">A3</th>
+          <th class="ml-7 "> A</th>
+          <th class="badge  badge-ghost">A1</th>
+          <th class="badge  badge-ghost ml-7">A2</th>
+          <th class="badge  badge-ghost ml-7">A3</th>
           <th class="badge badge-ghost ml-7">A4</th>
           
         </tr>
@@ -165,7 +165,7 @@
         <tr>
           <th class="ml-7">B</th>
           <th class="badge badge-ghost">B1</th>
-          <th class="badge badge-ghost ml-7">B2</th>
+          <th class=" badge badge-ghost ml-7">B2</th>
           <th class="badge badge-ghost ml-7">B3</th>
           <th class="badge badge-ghost ml-7">B4</th>
           
@@ -173,10 +173,10 @@
       </thead>
       <thead>
         <tr>
-          <th class="ml-7">C</th>
-          <th class="badge badge-ghost">C1</th>
-          <th class="badge badge-ghost ml-7">C2</th>
-          <th class="badge badge-ghost ml-7">C3</th>
+          <th class="ml-7 ">C</th>
+          <th class=" badge badge-ghost">C1</th>
+          <th class=" badge badge-ghost ml-7">C2</th>
+          <th class=" badge badge-ghost ml-7">C3</th>
           <th class="badge badge-ghost ml-7">C4</th>
           
         </tr>
@@ -186,7 +186,7 @@
           <th class="ml-7">D</th>
           <th class="badge badge-ghost">D1</th>
           <th class="badge badge-ghost ml-7">D2</th>
-          <th class="badge badge-ghost bg-[#1dd100] ml-7">D3</th>
+          <th class="badge badge-ghost ml-7">D3</th>
           <th class="badge badge-ghost ml-7">D4</th>
           
         </tr>
@@ -215,7 +215,7 @@
         <tr>
           <th class="ml-7">G</th>
           <th class="badge badge-ghost">G1</th>
-          <th class="badge badge-ghost bg-[#1dd100] ml-7">G2</th>
+          <th class=" badge badge-ghost bg-[#1dd100] ml-7">G2</th>
           <th class="badge badge-ghost ml-7">G3</th>
           <th class="badge badge-ghost ml-7">G4</th>
           
@@ -251,7 +251,9 @@
           
         </tr>
       </thead>
-  </table>
+</table>
+</div>
+</div>
 </div>
 </div>
 <div class="overflow-auto  ml-4 mt-7 w-full max-w-lg shadow-2xl bg-base-100">
@@ -259,7 +261,7 @@
   <table class="table ml-4 w-96">
       <thead>
         <tr>
-          <th class="font-bold text-black text-1xl">seat <sub class="text-white badge bg-[#1dd100]">2</sub></th>
+          <th id="Selected-container" class="font-bold text-black text-1xl">seat <sub class="text-white badge bg-[#1dd100]">2</sub></th>
           <th class="font-bold text-black text-1xl">class</th>
           <th class="font-bold text-black text-1xl">price</th>
         </tr>
@@ -295,8 +297,8 @@
         </label>
         <form class="card-body">
           <div class="form-control">
-            <label class="label">
-              <span class="label-texttext-1xl font-bold ">Passenger Name</span>
+            <label class="label ">
+              <span class="label-texttext-1xl  font-bold ">Passenger Name</span>
             </label>
             <input type="text" placeholder="Enter your name" class="input input-bordered" required />
           </div>
@@ -308,7 +310,7 @@
             <label class="label">
               <span class="label-text text-1xl font-bold">Email Id</span>
             </label>
-            <input type="text" placeholder="Enter youremail id" class="input input-bordered" required>
+            <input type="text" placeholder="Enter your email id" class="input input-bordered" required>
           </div>
           <div class="form-control mt-6">
             <button class="btn bg-[#1dd100] text-white text-1xl">Next</button>
@@ -325,6 +327,7 @@
   </div>
 </div>
 </div>
+
 
 </section>
     </main>
@@ -352,6 +355,9 @@
          <a class="text-1xl" href="">privacy policy</a>
         </nav>
       </footer>
+     
+      
+      <script src="scripts/bus.js"></script>
     
 </body>
 </html>
